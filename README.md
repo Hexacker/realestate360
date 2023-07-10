@@ -1,6 +1,6 @@
-# Real360 BACKEND
+# Real360
 
-The Real360 backend
+The Real360 system was built for a Real Estate agency that manages a lot of properties in the US and Mexico.
 
 
 ## Dependencies
