@@ -6,10 +6,10 @@ The Real360 system was built for a Real Estate agency that manages a lot of prop
 ## Dependencies
 
 - MongoDB
-- NodeJS 12
+- NodeJS 16
 - Axios
 - Mongoose
-- Typescript 3.5.3
+- Typescript 5
 - Jest
 
 ## Installation
