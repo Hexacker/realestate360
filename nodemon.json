@@ -1,0 +1,10 @@
+{
+  "watch": ["src"],
+  "ext": "ts",
+  "exec": "ts-node ./src/server.ts",
+  "env": {
+    "NODE_ENV": "dev",
+    "NODE_CONFIG_DIR": "./src/config",
+    "USE_SEEDS" :false
+  }
+}

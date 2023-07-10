@@ -1,0 +1,16 @@
+{
+  "db": {
+    "port": "DB_PORT",
+    "host": "DB_HOST",
+    "name": "DB_NAME",
+    "user": "DB_USER",
+    "password": "DB_PASSWORD"
+  },
+  "server": {
+    "port": "SERVER_PORT"
+  },
+  "jwtSecret": "JWT_SECRET",
+  "Sendgrid_API_KEY": "Sendgrid_API_KEY",
+  "Sendgrid_SENDER": "Sendgrid_SENDER",
+  "SERVER_HOST" : "SERVER_HOST"
+}

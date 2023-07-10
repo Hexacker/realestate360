@@ -1,0 +1,13 @@
+{
+  "db": {
+    "port": "27017",
+    "host": "localhost",
+    "name": "real360-jest",
+    "user": "",
+    "password": ""
+  },
+  "server": {
+    "port": "8089"
+  },
+  "jwtSecret": ""
+}

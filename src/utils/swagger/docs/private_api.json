@@ -1,0 +1,116 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Real360 Private API",
+    "contact": {},
+    "version": "1.0"
+  },
+  "servers": [{
+      "url": "https://real360project.herokuapp.com/api/v1",
+      "description": "Real360 Local Host",
+      "variables": {}
+    },
+    {
+      "url": "#",
+      "description": "Real360 Staging Host",
+      "variables": {}
+    }
+  ],
+  "paths": {
+    "/accounts/phone/{phone}": {
+      "post": {
+        "tags": ["Account"],
+        "summary": "Get Account By Phone",
+        "description": "Get account details by phone ",
+        "parameters": [{
+          "in": "path",
+          "name": "phone",
+          "example": "+213716183410",
+          "required": true,
+          "schema": {
+            "type": "string"
+          }
+        }],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Account": {
+        "title": "Account",
+        "required": [
+          "_id",
+          "isRefActivated",
+          "isActivated",
+          "status",
+          "phone",
+          "fullName",
+          "countryCode",
+          "refCode",
+          "createdAt",
+          "updatedAt",
+          "__v"
+        ],
+        "type": "object",
+        "properties": {
+          "_id": {
+            "type": "string"
+          },
+          "isRefActivated": {
+            "type": "boolean"
+          },
+          "isActivated": {
+            "type": "boolean"
+          },
+          "status": {
+            "type": "string"
+          },
+          "phone": {
+            "type": "string"
+          },
+          "fullName": {
+            "type": "string"
+          },
+          "countryCode": {
+            "type": "string"
+          },
+          "refCode": {
+            "type": "string"
+          },
+          "createdAt": {
+            "type": "string"
+          },
+          "updatedAt": {
+            "type": "string"
+          },
+          "__v": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "example": {
+          "_id": "602dadb5f867cf6b17b147bf",
+          "isRefActivated": true,
+          "isActivated": true,
+          "status": "pending",
+          "phone": "+213555555555",
+          "fullName": " Sophie  Fadel",
+          "countryCode": "DZA",
+          "refCode": "YA-23WIB4",
+          "createdAt": "2021-02-17T23:58:45.909Z",
+          "updatedAt": "2021-02-17T23:58:45.909Z",
+          "__v": 0
+        }
+      }
+    }
+  },
+  "tags": [{
+    "name": "Account"
+  }]
+}

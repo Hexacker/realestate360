@@ -1,0 +1,16 @@
+{
+  "db": {
+    "port": "27017",
+    "host": "localhost",
+    "name": "real360",
+    "user": "",
+    "password": ""
+  },
+  "server": {
+    "port": "8089"
+  },
+  "jwtSecret": "123456",
+  "Sendgrid_API_KEY": "PUT YOUR SENDGRID API KEY HERE",
+  "Sendgrid_SENDER" : "",
+  "SERVER_HOST" : "http://localhost"
+}
